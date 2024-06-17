@@ -1,0 +1,28 @@
+### Get a badges list
+GET http://localhost:3000/badges
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTg1NDkwODgsImV4cCI6MTcxODU4NTA4OH0.6uqbW5Rl5uYHRH1g1FGxZH14SiXdTrn2EyEfpk4Ug3k
+
+### Get a badge
+GET http://localhost:3000/badges/cda
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTg1NDkwODgsImV4cCI6MTcxODU4NTA4OH0.6uqbW5Rl5uYHRH1g1FGxZH14SiXdTrn2EyEfpk4Ug3k
+
+### Create a new badge
+POST http://localhost:3000/badges
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTg1NDkwODgsImV4cCI6MTcxODU4NTA4OH0.6uqbW5Rl5uYHRH1g1FGxZH14SiXdTrn2EyEfpk4Ug3k
+
+{
+  "slug": "urso",
+  "name": "Urso",
+  "category": "gold",
+  "img": "https://cidadealtarp.com/imagens/challenge/urso.png"
+}
+
+### Redeem a badge
+POST http://localhost:3000/badges/redeem
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGV4YW1wbGUuY29tIiwic3ViIjozLCJpYXQiOjE3MTg1NzUyMjgsImV4cCI6MTcxODU3ODgyOH0.E8CI6xWzlzZ-1Nk715nVdLAsAsQUKa9JdvwB7BKeAAw
+
+{
+  "slug": "hiena"
+}

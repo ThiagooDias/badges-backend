@@ -1,0 +1,16 @@
+### Buscar perfil do usuário 
+GET http://localhost:3000/user/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTg1NDkwODgsImV4cCI6MTcxODU4NTA4OH0.6uqbW5Rl5uYHRH1g1FGxZH14SiXdTrn2EyEfpk4Ug3k
+
+### Listar todos badges do usuário
+GET http://localhost:3000/user/badges
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGV4YW1wbGUuY29tIiwic3ViIjozLCJpYXQiOjE3MTg1NzUyMjgsImV4cCI6MTcxODU3ODgyOH0.E8CI6xWzlzZ-1Nk715nVdLAsAsQUKa9JdvwB7BKeAAw
+
+### Atualiza perfil do usuário 
+PUT http://localhost:3000/user/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTg1NDkwODgsImV4cCI6MTcxODU4NTA4OH0.6uqbW5Rl5uYHRH1g1FGxZH14SiXdTrn2EyEfpk4Ug3k
+Content-Type: application/json
+
+{
+  "name": "Jhon"
+}
